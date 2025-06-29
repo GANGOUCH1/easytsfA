@@ -5,7 +5,9 @@ import torch
 import torch.nn as nn
 from torch.distributions.normal import Normal
 
-from kanlayer import WaveKANLayer, TaylorKANLayer
+# from kanlayer import WaveKANLayer, TaylorKANLayer
+
+from easytsf.layer.kanlayer import WaveKANLayer, TaylorKANLayer
 
 
 class RevIN(nn.Module):
