@@ -44,7 +44,7 @@ class DataInterface(pl.LightningDataModule):
         self.time_feature_cls = kwargs['time_feature_cls']
 
         #self.data_path = os.path.join(kwargs['data_root'], "{}.npz".format(kwargs['dataset_name']))
-        self.data_path = os.path.join(kwargs['data_root'], "dataset/ETTh1.npz".format(kwargs['dataset_name']))
+        self.data_path = os.path.join('', "dataset/ETTh1.npz".format(kwargs['dataset_name']))
         self.config = kwargs
 
         self.variable, self.time_feature = self.__read_data__()
