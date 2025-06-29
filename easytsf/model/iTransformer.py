@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
 
-from transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer, iTransformer_Embedder
+# from transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer, iTransformer_Embedder
+from easytsf.layer.transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer, iTransformer_Embedder
+
 
 
 class iTransformer(nn.Module):
