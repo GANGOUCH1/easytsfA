@@ -1,9 +1,11 @@
 import torch
 from torch import nn
 
-from embedding import PatchEmbedding
-from transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer
+# from embedding import PatchEmbedding
+# from transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer
 
+from easytsf.layer.embedding import PatchEmbedding
+from easytsf.layer.transformer import Encoder, EncoderLayer, FullAttention, AttentionLayer
 
 class Transpose(nn.Module):
     def __init__(self, *dims, contiguous=False):
