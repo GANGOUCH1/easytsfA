@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from kanlayer import TaylorKANLayer, WaveKANLayer
+from easytsf.layer.kanlayer import TaylorKANLayer, WaveKANLayer
 
 
 class RevIN(nn.Module):
