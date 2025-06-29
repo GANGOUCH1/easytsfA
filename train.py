@@ -85,7 +85,7 @@ def train_func(hyper_conf, conf):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--config", type=str)
+    parser.add_argument("-c", "--config",default="dataset", type=str)
     parser.add_argument("-d", "--data_root", default="dataset", type=str, help="data root")
     parser.add_argument("-s", "--save_root", default="save", help="save root")
     parser.add_argument("--devices", default='0,', type=str, help="device' id to use")
