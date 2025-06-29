@@ -2,8 +2,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from kanlayer import KANInterfaceV2
-from DenseRMoK import RevIN
+# from kanlayer import KANInterfaceV2
+# from DenseRMoK import RevIN
+
+from easytsf.layer.kanlayer import KANInterfaceV2
+from easytsf.model.DenseRMoK import RevIN
 
 
 class MoKLayer(nn.Module):
