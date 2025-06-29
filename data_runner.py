@@ -6,7 +6,7 @@ import pandas as pd
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 
-print(os.getcwd())
+
 class GeneralTSFDataset(Dataset):
     def __init__(self, hist_len, pred_len, variable, time_feature):
         self.hist_len = hist_len
@@ -44,7 +44,7 @@ class DataInterface(pl.LightningDataModule):
         self.time_feature_cls = kwargs['time_feature_cls']
 
         #self.data_path = os.path.join(kwargs['data_root'], "{}.npz".format(kwargs['dataset_name']))
-        self.data_path =  "dataset/ETTh1.npz"
+        self.data_path =  "/kaggle/working/easytsfA/dataset/ETTh1.npz"
         self.config = kwargs
 
         self.variable, self.time_feature = self.__read_data__()
