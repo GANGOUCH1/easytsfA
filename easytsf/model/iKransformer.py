@@ -1,8 +1,12 @@
 import torch
 import torch.nn as nn
 
-from kanlayer import KANInterface
-from transformer import Encoder, EncoderLayer, FullAttention, iTransformer_Embedder
+# from kanlayer import KANInterface
+# from transformer import Encoder, EncoderLayer, FullAttention, iTransformer_Embedder
+
+from easytsf.layer.kanlayer import KANInterface
+from easytsf.layer.transformer import Encoder, EncoderLayer, FullAttention, iTransformer_Embedder
+
 
 
 class KANAttentionLayer(nn.Module):
