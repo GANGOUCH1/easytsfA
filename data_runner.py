@@ -6,7 +6,7 @@ import pandas as pd
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 
-
+print(os.getcwd())
 class GeneralTSFDataset(Dataset):
     def __init__(self, hist_len, pred_len, variable, time_feature):
         self.hist_len = hist_len
