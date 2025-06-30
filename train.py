@@ -8,8 +8,8 @@ from lightning.pytorch.callbacks import LearningRateMonitor, ModelCheckpoint, Ea
 from lightning.pytorch.loggers import CSVLogger, WandbLogger
 from ray.tune.integration.pytorch_lightning import TuneReportCheckpointCallback
 
-from data_runner import DataInterface
-from exp_runner import LTSFRunner
+from runner.data_runner import DataInterface
+from runner.exp_runner import LTSFRunner
 from util import cal_conf_hash
 from util import load_module_from_path
 
