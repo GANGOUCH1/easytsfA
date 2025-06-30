@@ -16,7 +16,8 @@ class LTSFRunner(L.LightningModule):
         self.load_model()
         self.configure_loss()
 
-        stat = np.load(os.path.join(self.hparams.data_root, '{}.npz'.format(self.hparams.dataset_name)))
+        # stat = np.load(os.path.join(self.hparams.data_root, '{}.npz'.format(self.hparams.dataset_name)))
+        stat = np.load(os.path.join('/kaggle/working/easytsfA/dataset/1/', "{}.npz".format(kwargs['dataset_name'])))
         self.register_buffer('mean', torch.tensor(stat['mean']).float())
         self.register_buffer('std', torch.tensor(stat['std']).float())
 
