@@ -43,7 +43,8 @@ class DataInterface(pl.LightningDataModule):
         self.train_len, self.val_len, self.test_len = kwargs['data_split']
         self.time_feature_cls = kwargs['time_feature_cls']
 
-        self.data_path = os.path.join(kwargs['data_root'], "{}.npz".format(kwargs['dataset_name']))
+        #self.data_path = os.path.join(kwargs['data_root'], "{}.npz".format(kwargs['dataset_name']))
+        self.data_path = "/kaggle/working/easytsfA/dataset/1/Weather.npz"
         self.config = kwargs
 
         self.variable, self.time_feature = self.__read_data__()
