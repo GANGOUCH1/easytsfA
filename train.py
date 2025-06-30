@@ -1,4 +1,4 @@
-import argparse
+asimport argparse
 import importlib
 import importlib.util
 import os
@@ -10,8 +10,10 @@ from ray.tune.integration.pytorch_lightning import TuneReportCheckpointCallback
 
 from easytsf.runner.data_runner import DataInterface
 from easytsf.runner.exp_runner import LTSFRunner
-from util import cal_conf_hash
-from util import load_module_from_path
+from easytsf.util import cal_conf_hash
+from easytsf.util import load_module_from_path
+# from util import cal_conf_hash
+# from util import load_module_from_path
 
 
 def load_config(exp_conf_path):
