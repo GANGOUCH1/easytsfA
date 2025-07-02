@@ -108,7 +108,8 @@ class LTSFRunner(L.LightningModule):
         """
         model_class_args = inspect.getfullargspec(Model.__init__).args[1:]  # 获取模型参数
         interface_args = self.hparams.keys()
-        model_args_instance = {'d_ff': 2048} #weadd 'd_ff': 2048
+        # model_args_instance = {'d_ff': 2048} # we add 'd_ff': 2048
+        model_args_instance = {'d_ff'}
         for arg in model_class_args:
             if arg in interface_args:
                 model_args_instance[arg] = getattr(self.hparams, arg)
